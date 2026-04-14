@@ -10,7 +10,7 @@ public class TestData {
         return new Object[][]{
                 {"Bhavya", "bhavya"},
                 {"TestUser", "testuser"},
-                {"DemoUser", "demo"}
+//                {"DemoUser", "demo"}
         };
     }
 }

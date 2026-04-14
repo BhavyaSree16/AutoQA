@@ -11,6 +11,7 @@ public class BasePage {
     protected WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
+
         this.driver = driver;
 
         int timeout = Integer.parseInt(ConfigReader.get("timeout"));
