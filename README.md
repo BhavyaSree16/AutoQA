@@ -142,3 +142,156 @@ cvc=550
 expiryMonth=03
 expiryYear=2034
 ```
+
+---
+
+## 🧪 Test Modules Overview
+
+### 1️⃣ Authentication Module
+- User registration  
+- Login validation  
+- Logout verification  
+
+---
+
+### 2️⃣ Product Module
+- Product search  
+- Category navigation  
+- View product details  
+- Validate product name & price  
+
+---
+
+### 3️⃣ Cart Module
+- Add multiple products (config-driven)  
+- Handle popup (Continue Shopping / View Cart)  
+- Navigate to cart  
+
+---
+
+### 4️⃣ Checkout Module
+- Proceed to checkout  
+- Place order  
+- Enter payment details  
+- Dynamic validation for empty fields  
+
+---
+
+### 5️⃣ Form Validation Module
+- Submit empty form  
+- Invalid email validation  
+
+---
+
+## 🔄 End-to-End Flow
+```
+Register → Login
+→ Products → Add to Cart
+→ Cart → Checkout
+→ Payment → Order Confirmation
+```
+
+---
+
+## 📊 Test Reports
+
+### 🔹 Extent Report
+```
+ Generated at: C:\Users\Bhavya Sree\git\repository4\AutoQA\reports\ExtentReport.html
+```
+
+
+### Features:
+
+- Test execution summary  
+- Pass / Fail status  
+- Error logs  
+- Screenshot attachment  
+- Clean UI dashboard  
+
+---
+
+### 🔹 Screenshots
+```
+Location: C:\Users\Bhavya Sree\git\repository4\AutoQA\reports\screenshots\
+Captured:
+- On test failure  
+- On dynamic validation  
+```
+---
+
+### 🔹 TestNG Report
+```
+##  Running Tests
+
+### Run all tests : mvn test
+
+### Run specific test : mvn test -Dtest=EndToEndTest
+
+```
+
+
+---
+
+## ⚙️ TestNG Configuration
+
+```xml
+<suite name="AutomationSuite">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="All Tests">
+        <classes>
+            <class name="tests.EndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+💡 Best Practices Implemented
+```
+Page Object Model (POM)
+Explicit waits (no Thread.sleep)
+Config-driven testing
+Dynamic validation
+Screenshot handling
+Extent Report integration
+Clean layered architecture
+```
+
+🛠 Troubleshooting
+```
+Issue	Solution
+Report not generated	Check extent.flush()
+Screenshots missing	Verify folder path
+Driver issues	Use WebDriverManager
+Element not found	Increase wait
+```
+🧰 Technology Stack
+```
+Component	Technology
+Language	Java
+Automation	Selenium
+Framework	TestNG
+Build Tool	Maven
+Reporting	ExtentReports
+Browser	Chrome
+```
+
+📌 Conclusion
+
+This project demonstrates a complete real-world automation framework with:
+Authentication
+Product testing
+Cart operations
+Checkout & payment
+Form validations
+Advanced reporting
+
+Contact & Contribution
+For questions, issues, or contributions, please:
+Create an issue in the repository
+Submit a pull request with improvements
+Follow the existing code style and patterns
