@@ -13,7 +13,7 @@ public class CheckoutWithoutLoginTest extends BaseTest {
         ProductsPage product = new ProductsPage(driver);
         CartPage cart = new CartPage(driver);
 
-        // Open products
+        // 🔹 Open products
         product.openProductsPage();
 
         // Add product
