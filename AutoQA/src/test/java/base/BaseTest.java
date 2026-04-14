@@ -10,8 +10,11 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() {
+
         driver = DriverFactory.initDriver();
+
         driver.manage().window().maximize();
+
         driver.get(ConfigReader.get("baseUrl"));
     }
 

@@ -14,9 +14,11 @@ public class DriverFactory {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             return new ChromeDriver();
-        } else {
+        } else if (browser.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         }
+
+        throw new RuntimeException("Invalid browser in config");
     }
 }

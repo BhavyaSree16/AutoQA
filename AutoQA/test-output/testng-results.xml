@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-14T16:23:21 IST" name="AutomationSuite" finished-at="2026-04-14T16:23:44 IST" duration-ms="22871">
+    <groups>
+    </groups>
+    <test started-at="2026-04-14T16:23:21 IST" name="RegisterTest" finished-at="2026-04-14T16:23:44 IST" duration-ms="22871">
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:21 IST" name="setup" finished-at="2026-04-14T16:23:26 IST" duration-ms="4654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignup(java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:26 IST" name="testSignup" data-provider="registerData" finished-at="2026-04-14T16:23:28 IST" duration-ms="2487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bhavya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:28 IST" name="tearDown" finished-at="2026-04-14T16:23:29 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:29 IST" name="setup" finished-at="2026-04-14T16:23:32 IST" duration-ms="3233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignup(java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:32 IST" name="testSignup" data-provider="registerData" finished-at="2026-04-14T16:23:34 IST" duration-ms="2276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:34 IST" name="tearDown" finished-at="2026-04-14T16:23:35 IST" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:35 IST" name="setup" finished-at="2026-04-14T16:23:39 IST" duration-ms="3988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignup(java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:39 IST" name="testSignup" data-provider="registerData" finished-at="2026-04-14T16:23:43 IST" duration-ms="3834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@75d4a5c2]" started-at="2026-04-14T16:23:43 IST" name="tearDown" finished-at="2026-04-14T16:23:44 IST" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- RegisterTest -->
+  </suite> <!-- AutomationSuite -->
+</testng-results>
