@@ -8,85 +8,56 @@ import org.testng.annotations.Test;
 public class EndToEndTest extends BaseTest {
 
     @Test
-    public void testFullFlow() {
+    public void testE2E_Register_Login_AddToCart() {
 
-        // 🔹 STEP 1: Go to Signup/Login
+        // 🔹 STEP 1: Register
         SignupPage signup = new SignupPage(driver);
-
-        System.out.println("STEP 1: Open Signup/Login");
         signup.openSignupPage();
 
         String name = "Bhavya";
         String email = "bhavya" + System.currentTimeMillis() + "@gmail.com";
 
-        // 🔹 STEP 2: Register
-        System.out.println("STEP 2: Enter Name & Email");
+        System.out.println("STEP 1: Register");
         signup.enterDetails(name, email);
         signup.clickSignup();
 
-        // 🔹 STEP 3: Fill Account Info
-        System.out.println("STEP 3: Fill Account Information");
         AccountInfoPage account = new AccountInfoPage(driver);
         account.fillAccountDetails();
         account.clickCreateAccount();
 
-        // 🔹 STEP 4: Continue
-        System.out.println("STEP 4: Click Continue");
-        AccountCreatedPage createdPage = new AccountCreatedPage(driver);
-        createdPage.clickContinue();
+        AccountCreatedPage created = new AccountCreatedPage(driver);
+        created.clickContinue();
 
         HomePage home = new HomePage(driver);
 
-        // 🔹 STEP 5: Logout
-        System.out.println("STEP 5: Logout");
+        // STEP 2: Logout
+        System.out.println("STEP 2: Logout");
         home.clickLogout();
 
-        // 🔹 STEP 6: Login
-        System.out.println("STEP 6: Navigate to Login");
+        // STEP 3: Login
+        System.out.println("STEP 3: Login");
         home.clickSignupLogin();
-
-        System.out.println("STEP 7: Valid Login");
 
         LoginPage login = new LoginPage(driver);
         login.login(email, "Test@123");
 
-        //Validate login
-        Assert.assertTrue(login.isLoginSuccessful(), "Valid login failed");
+        Assert.assertTrue(login.isLoginSuccessful(), "Login failed");
+        System.out.println("LOGIN SUCCESS");
 
-        System.out.println("VALID LOGIN SUCCESSFUL");
-
-        // STEP 7: PRODUCTS MODULE
-        System.out.println("STEP 8: Navigate to Products");
-
+        // STEP 4: Go to Products
         ProductsPage product = new ProductsPage(driver);
         product.openProductsPage();
 
-        //STEP 8: Search Product
-        System.out.println("STEP 9: Search Product");
-        product.searchProduct();
+        // STEP 5: Add products using config (INDEX/ID)
+        System.out.println("STEP 4: Add Products from Config");
 
-        Assert.assertTrue(product.isSearchResultDisplayed(), "Search results not displayed");
+        CartPage cart = new CartPage(driver);
+        cart.addProductsFromConfig();
 
-        //STEP 9: Category Navigation
-        System.out.println("STEP 10: Select Category");
-        product.selectCategoryFromConfig();
+        // STEP 6: Go to Cart
+        System.out.println("STEP 5: Go to Cart");
+        cart.goToCart();
 
-        Assert.assertTrue(product.isCategoryProductsDisplayed(), "Category products not displayed");
-
-        //STEP 10: View Product
-        System.out.println("STEP 11: View Product");
-        product.clickViewProduct();
-
-        String productName = product.getProductName();
-        String productPrice = product.getProductPrice();
-
-        System.out.println("Product Name: " + productName);
-        System.out.println("Product Price: " + productPrice);
-
-        // Final Assertions
-        Assert.assertFalse(productName.isEmpty(), "Product name is empty");
-        Assert.assertFalse(productPrice.isEmpty(), "Product price is empty");
-
-        System.out.println("END-TO-END FLOW PASSED");
+        System.out.println(" END-TO-END TEST PASSED");
     }
 }

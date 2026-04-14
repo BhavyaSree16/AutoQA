@@ -8,42 +8,36 @@ import org.testng.annotations.Test;
 public class ProductTest extends BaseTest {
 
     @Test
-    public void testProductModule() {
+    public void testProductsModule() {
 
         ProductsPage product = new ProductsPage(driver);
 
-        //Step 1: Open Products Page
+        // 🔹 STEP 1: Open Products Page
         System.out.println("STEP 1: Open Products Page");
         product.openProductsPage();
 
-        //Step 2: Search Product
+        // 🔹 STEP 2: Search Product
         System.out.println("STEP 2: Search Product");
         product.searchProduct();
 
-        //Step 3: Verify Search Results
+        // 🔹 STEP 3: Verify Search Results
         System.out.println("STEP 3: Verify Search Results");
-        Assert.assertTrue(product.isSearchResultDisplayed(), "Search results not displayed");
+        Assert.assertTrue(product.isSearchResultDisplayed(),
+                "Search results not displayed");
 
-        //Step 4: Category Navigation (UPDATED)
+        // 🔹 STEP 4: Select Category
         System.out.println("STEP 4: Select Category");
         product.selectCategoryFromConfig();
 
-        Assert.assertTrue(product.isCategoryProductsDisplayed(), "Category products not displayed");
+        // 🔹 STEP 5: Verify Category Products
+        System.out.println("STEP 5: Verify Category Products");
+        Assert.assertTrue(product.isCategoryProductsDisplayed(),
+                "Category products not displayed");
 
-        //Step 5: Product Detail
-        System.out.println("STEP 5: View Product");
-        product.clickViewProduct();
+        // 🔥 STEP 6: View Products & Print Prices (CONFIG-DRIVEN)
+        System.out.println("STEP 6: View Products & Capture Prices");
+        product.viewProductsAndPrintPrices();
 
-        String name = product.getProductName();
-        String price = product.getProductPrice();
-
-        System.out.println("Product Name: " + name);
-        System.out.println("Product Price: " + price);
-
-//        Assertions
-        Assert.assertFalse(name.isEmpty(), "Product name is empty");
-        Assert.assertFalse(price.isEmpty(), "Product price is empty");
-
-        System.out.println("✅ PRODUCT MODULE TEST PASSED");
+        System.out.println("PRODUCTS TEST PASSED");
     }
 }
