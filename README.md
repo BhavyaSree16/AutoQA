@@ -288,10 +288,11 @@ Cart operations
 Checkout & payment
 Form validations
 ```
-Advanced reporting
-
+## Advanced reporting
+```
 Contact & Contribution
 For questions, issues, or contributions, please:
 Create an issue in the repository
 Submit a pull request with improvements
 Follow the existing code style and patterns
+```
