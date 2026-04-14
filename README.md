@@ -125,3 +125,20 @@ ITestListener
 
 ---
 
+## ⚙️ Configuration
+
+### 📄 `config.properties`
+```
+browser=chrome
+baseUrl=https://automationexercise.com
+
+timeout=10
+
+productIds=1,2,3
+
+nameOnCard=Bhavya
+cardNumber=534712345678
+cvc=550
+expiryMonth=03
+expiryYear=2034
+```
