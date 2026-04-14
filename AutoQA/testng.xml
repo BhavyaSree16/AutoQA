@@ -2,7 +2,7 @@
 
 <suite name="AutomationSuite">
 
-    <test name="CartTest">
+    <test name="E2E Tests">
         <classes>
             <class name="tests.EndToEndTest"/>
         </classes>
