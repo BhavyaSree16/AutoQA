@@ -249,7 +249,7 @@ Captured:
     </test>
 
 </suite>
-
+```
 💡 Best Practices Implemented
 ```
 Page Object Model (POM)
