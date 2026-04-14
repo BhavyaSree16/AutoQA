@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T22:58:26 IST" name="Default suite" finished-at="2026-04-14T22:59:08 IST" duration-ms="42158">
+  <suite started-at="2026-04-14T23:06:51 IST" name="AutomationSuite" finished-at="2026-04-14T23:07:17 IST" duration-ms="25203">
     <groups>
     </groups>
-    <test started-at="2026-04-14T22:58:26 IST" name="Default test" finished-at="2026-04-14T22:59:08 IST" duration-ms="42158">
+    <test started-at="2026-04-14T23:06:51 IST" name="ProductTest" finished-at="2026-04-14T23:07:17 IST" duration-ms="25203">
       <class name="tests.EndToEndTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T22:58:26 IST" name="setup" finished-at="2026-04-14T22:58:33 IST" duration-ms="7011" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T23:06:51 IST" name="setup" finished-at="2026-04-14T23:06:57 IST" duration-ms="5757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testFullFlow()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T22:58:33 IST" name="testFullFlow" finished-at="2026-04-14T22:59:04 IST" duration-ms="31171" status="PASS">
+        <test-method signature="testFullFlow()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T23:06:57 IST" name="testFullFlow" finished-at="2026-04-14T23:07:16 IST" duration-ms="19113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFullFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T22:59:04 IST" name="tearDown" finished-at="2026-04-14T22:59:08 IST" duration-ms="3915" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-14T23:07:16 IST" name="tearDown" finished-at="2026-04-14T23:07:17 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.EndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ProductTest -->
+  </suite> <!-- AutomationSuite -->
 </testng-results>
