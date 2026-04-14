@@ -1,4 +1,4 @@
-# 🚀 AutomationExercise – Selenium Test Automation Suite
+# 🚀 Problem Statement 1: AutoQA Pro: End-to-End Test Automation Framework for an E-Commerce Web Application
 
 ---
 
