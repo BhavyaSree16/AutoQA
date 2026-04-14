@@ -12,29 +12,29 @@ public class ProductTest extends BaseTest {
 
         ProductsPage product = new ProductsPage(driver);
 
-        // 🔹 STEP 1: Open Products Page
+        //STEP 1: Open Products Page
         System.out.println("STEP 1: Open Products Page");
         product.openProductsPage();
 
-        // 🔹 STEP 2: Search Product
+        // STEP 2: Search Product
         System.out.println("STEP 2: Search Product");
         product.searchProduct();
 
-        // 🔹 STEP 3: Verify Search Results
+        // STEP 3: Verify Search Results
         System.out.println("STEP 3: Verify Search Results");
         Assert.assertTrue(product.isSearchResultDisplayed(),
                 "Search results not displayed");
 
-        // 🔹 STEP 4: Select Category
+        //STEP 4: Select Category
         System.out.println("STEP 4: Select Category");
         product.selectCategoryFromConfig();
 
-        // 🔹 STEP 5: Verify Category Products
+        //STEP 5: Verify Category Products
         System.out.println("STEP 5: Verify Category Products");
         Assert.assertTrue(product.isCategoryProductsDisplayed(),
                 "Category products not displayed");
 
-        // 🔥 STEP 6: View Products & Print Prices (CONFIG-DRIVEN)
+        // STEP 6: View Products & Print Prices (CONFIG-DRIVEN)
         System.out.println("STEP 6: View Products & Capture Prices");
         product.viewProductsAndPrintPrices();
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 
 public class SignupPage extends BasePage {
 
-    // 🔹 Locators
+    // Locators
     private By signupLoginBtn = By.xpath("//a[@href='/login']");
 
     private By nameField = By.name("name");
@@ -16,12 +16,12 @@ public class SignupPage extends BasePage {
         super(driver);
     }
 
-    // 🔹 Open Signup/Login Page
+    // Open Signup/Login Page
     public void openSignupPage() {
         waitForElement(signupLoginBtn).click();
     }
 
-    // 🔥 ADD THIS METHOD (FIX)
+    // ADD THIS METHOD 
     public void enterDetails(String name, String email) {
         waitForElement(nameField).sendKeys(name);
         waitForElement(emailField).sendKeys(email);
@@ -30,13 +30,13 @@ public class SignupPage extends BasePage {
         System.out.println("Entered Email: " + email);
     }
 
-    // 🔥 ADD THIS METHOD (FIX)
+    // ADD THIS METHOD 
     public void clickSignup() {
         waitForElement(signupBtn).click();
         System.out.println("Signup button clicked");
     }
 
-    // 🔹 Validation methods (optional)
+    // Validation methods (optional)
     public void submitEmptyForm() {
         waitForElement(signupBtn).click();
     }

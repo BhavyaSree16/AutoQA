@@ -13,15 +13,15 @@ public class CartTest extends BaseTest {
         ProductsPage product = new ProductsPage(driver);
         CartPage cart = new CartPage(driver);
 
-        // 🔹 STEP 1: Open Products Page
+        // STEP 1: Open Products Page
         System.out.println("STEP 1: Open Products Page");
         product.openProductsPage();
 
-        // 🔹 STEP 2: Add products using config
+        // STEP 2: Add products using config
         System.out.println("STEP 2: Add Products from Config");
         cart.addProductsFromConfig();
 
-        // 🔹 STEP 3: Go to Cart
+        // STEP 3: Go to Cart
         System.out.println("STEP 3: Navigate to Cart");
         cart.goToCart();
 

@@ -8,7 +8,7 @@ public class LoginPage extends BasePage {
     private By loginPassword = By.cssSelector("input[data-qa='login-password']");
     private By loginBtn = By.cssSelector("button[data-qa='login-button']");
 
-    // 🔥 CORRECT VALIDATION
+    // CORRECT VALIDATION
     private By loggedInText = By.xpath("//a[contains(text(),'Logged in as')]");
     private By errorMsg = By.xpath("//p[contains(text(),'incorrect')]");
 

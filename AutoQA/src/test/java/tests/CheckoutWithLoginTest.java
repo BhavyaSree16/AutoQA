@@ -10,7 +10,7 @@ public class CheckoutWithLoginTest extends BaseTest {
     @Test
     public void testCheckoutFlow() {
 
-        // 🔹 Login (reuse your E2E login)
+        //Login (reuse your E2E login)
         LoginPage login = new LoginPage(driver);
         HomePage home = new HomePage(driver);
 
@@ -19,13 +19,13 @@ public class CheckoutWithLoginTest extends BaseTest {
 
         Assert.assertTrue(login.isLoginSuccessful());
 
-        // 🔹 Add to cart
+        // Add to cart
         CartPage cart = new CartPage(driver);
         cart.addProductsFromConfig();
 
         cart.goToCart();
 
-        // 🔹 Checkout
+        //Checkout
         CheckoutPage checkout = new CheckoutPage(driver);
 
         checkout.clickProceedToCheckout();

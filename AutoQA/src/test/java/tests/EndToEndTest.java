@@ -10,7 +10,7 @@ public class EndToEndTest extends BaseTest {
     @Test
     public void testCompleteE2EFlow() {
 
-        // 🔹 STEP 1: Register
+        // STEP 1: Register
         SignupPage signup = new SignupPage(driver);
         signup.openSignupPage();
 
@@ -29,11 +29,11 @@ public class EndToEndTest extends BaseTest {
 
         HomePage home = new HomePage(driver);
 
-        // 🔹 STEP 2: Logout
+        // STEP 2: Logout
         System.out.println("STEP 2: Logout");
         home.clickLogout();
 
-        // 🔹 STEP 3: Login
+        // STEP 3: Login
         System.out.println("STEP 3: Login");
         home.clickSignupLogin();
 
@@ -41,35 +41,35 @@ public class EndToEndTest extends BaseTest {
         login.login(email, "Test@123");
 
         Assert.assertTrue(login.isLoginSuccessful(), "❌ Login failed");
-        System.out.println("✅ LOGIN SUCCESS");
+        System.out.println("LOGIN SUCCESS");
 
-        // 🔹 STEP 4: Open Products
+        //STEP 4: Open Products
         ProductsPage product = new ProductsPage(driver);
         product.openProductsPage();
 
-        // 🔹 STEP 5: Add products (config-driven)
+        //STEP 5: Add products (config-driven)
         System.out.println("STEP 4: Add Products");
 
         CartPage cart = new CartPage(driver);
         cart.addProductsFromConfig();
 
-        // 🔹 STEP 6: Go to Cart
+        //STEP 6: Go to Cart
         System.out.println("STEP 5: Go to Cart");
         cart.goToCart();
 
-        // 🔹 STEP 7: Checkout
+        //STEP 7: Checkout
         System.out.println("STEP 6: Checkout");
 
         CheckoutPage checkout = new CheckoutPage(driver);
         checkout.clickProceedToCheckout();
         checkout.clickPlaceOrder();
 
-        // 🔹 STEP 8: Payment
+        //STEP 8: Payment
         System.out.println("STEP 7: Payment");
 
         checkout.enterPaymentDetails();
         checkout.confirmOrder();
 
-        System.out.println("✅ END-TO-END TEST PASSED");
+        System.out.println("END-TO-END TEST PASSED");
     }
 }

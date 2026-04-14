@@ -12,6 +12,6 @@ public class AccountCreatedPage extends BasePage {
 
     public void clickContinue() {
         waitForElement(continueBtn).click();
-        System.out.println("✅ Continue button clicked");
+        System.out.println("Continue button clicked");
     }
 }

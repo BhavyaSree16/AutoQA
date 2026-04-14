@@ -40,7 +40,7 @@ public class RegisterTest extends BaseTest {
         System.out.println("STEP 6: Navigate back to Signup/Login");
         home.clickSignupLogin();
 
-        // 🔥 STEP 7: VALID LOGIN
+        //VALID LOGIN
         System.out.println("STEP 7: Valid Login");
 
         LoginPage login = new LoginPage(driver);
@@ -52,11 +52,11 @@ public class RegisterTest extends BaseTest {
             Assert.fail("Valid login failed");
         }
 
-        // 🔥 Logout again
+        //Logout again
         home.clickLogout();
         home.clickSignupLogin();
 
-        // 🔥 STEP 8: INVALID LOGIN
+        //INVALID LOGIN
         System.out.println("STEP 8: Invalid Login");
 
         login.login(email, "wrong123");

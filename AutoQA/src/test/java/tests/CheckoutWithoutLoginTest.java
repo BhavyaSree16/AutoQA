@@ -13,21 +13,21 @@ public class CheckoutWithoutLoginTest extends BaseTest {
         ProductsPage product = new ProductsPage(driver);
         CartPage cart = new CartPage(driver);
 
-        // 🔹 Open products
+        // Open products
         product.openProductsPage();
 
-        // 🔹 Add product
+        // Add product
         cart.addProductsFromConfig();
         cart.goToCart();
 
-        // 🔹 Try checkout
+        //Try checkout
         CheckoutPage checkout = new CheckoutPage(driver);
         checkout.clickProceedToCheckout();
 
-        // 🔥 Validate redirect
+        // Validate redirect
         Assert.assertTrue(checkout.isRedirectedToLogin(),
-                "❌ Not redirected to login");
+                "Not redirected to login");
 
-        System.out.println("✅ REDIRECT TO LOGIN VERIFIED");
+        System.out.println("REDIRECT TO LOGIN VERIFIED");
     }
 }

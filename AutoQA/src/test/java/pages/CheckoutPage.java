@@ -39,7 +39,7 @@ public class CheckoutPage extends BasePage {
         waitForElement(expiryMonth).sendKeys(ConfigReader.get("expiryMonth"));
         waitForElement(expiryYear).sendKeys(ConfigReader.get("expiryYear"));
 
-        // TAKE SCREENSHOT HERE (IMPORTANT)
+        // TAKE SCREENSHOT HERE 
         ScreenshotUtil.capture(driver, "Payment_Page");
 
         System.out.println("Payment details entered");
