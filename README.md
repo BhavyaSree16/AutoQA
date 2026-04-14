@@ -260,17 +260,16 @@ Screenshot handling
 Extent Report integration
 Clean layered architecture
 ```
-
-🛠 Troubleshooting
 ```
+🛠 Troubleshooting
 Issue	Solution
 Report not generated	Check extent.flush()
 Screenshots missing	Verify folder path
 Driver issues	Use WebDriverManager
 Element not found	Increase wait
 ```
-🧰 Technology Stack
 ```
+🧰 Technology Stack
 Component	Technology
 Language	Java
 Automation	Selenium
