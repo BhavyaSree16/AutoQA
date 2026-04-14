@@ -2,9 +2,9 @@
 
 <suite name="AutomationSuite">
 
-    <test name="EndToEndTest">
+    <test name="ProductTest">
         <classes>
-            <class name="tests.EndToEndTest"/>
+            <class name="tests.ProductTest"/>
         </classes>
     </test>
 
