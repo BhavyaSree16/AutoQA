@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.EndToEndTest">
         <methods>
-          <include name="setup"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
           <include name="testCompleteE2EFlow"/>
         </methods>

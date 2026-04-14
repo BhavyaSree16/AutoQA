@@ -8,20 +8,29 @@ import java.util.Date;
 
 public class ScreenshotUtil {
 
-    public static void capture(WebDriver driver, String testName) {
+    public static String capture(WebDriver driver, String name) {
 
         try {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File src = ts.getScreenshotAs(OutputType.FILE);
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-            String time = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 
-            File dest = new File("screenshots/" + testName + "_" + time + ".png");
+            // SAME BASE PATH
+            String path = "C:\\Users\\Bhavya Sree\\git\\repository4\\AutoQA\\reports\\screenshots\\"
+                    + name + "_" + timestamp + ".png";
+
+            File dest = new File(path);
+
+            // Create folder if not exists
+            dest.getParentFile().mkdirs();
 
             FileUtils.copyFile(src, dest);
 
+            return path;
+
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
         }
     }
 }

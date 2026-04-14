@@ -2,16 +2,20 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
-import utils.*;
+import utils.ConfigReader;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    // CHANGE HERE
+    public WebDriver driver;
 
     @BeforeMethod
-    public void setup() {
+    public void setUp() {
 
-        driver = DriverFactory.initDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 
         driver.manage().window().maximize();
         driver.get(ConfigReader.get("baseUrl"));
@@ -19,6 +23,6 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        DriverFactory.getDriver().quit();
+        driver.quit();
     }
 }
