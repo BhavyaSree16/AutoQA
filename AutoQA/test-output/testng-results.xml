@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-15T00:16:15 IST" name="AutomationSuite" finished-at="2026-04-15T00:16:43 IST" duration-ms="28139">
+  <suite started-at="2026-04-15T00:56:06 IST" name="AutomationSuite" finished-at="2026-04-15T00:56:48 IST" duration-ms="42201">
     <groups>
     </groups>
-    <test started-at="2026-04-15T00:16:15 IST" name="CartTest" finished-at="2026-04-15T00:16:43 IST" duration-ms="28139">
+    <test started-at="2026-04-15T00:56:06 IST" name="E2E Tests" finished-at="2026-04-15T00:56:48 IST" duration-ms="42201">
       <class name="tests.EndToEndTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:16:15 IST" name="setup" finished-at="2026-04-15T00:16:20 IST" duration-ms="5005" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:56:06 IST" name="setup" finished-at="2026-04-15T00:56:15 IST" duration-ms="9308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testE2E_Register_Login_AddToCart()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:16:20 IST" name="testE2E_Register_Login_AddToCart" finished-at="2026-04-15T00:16:42 IST" duration-ms="22415" status="PASS">
+        <test-method signature="testCompleteE2EFlow()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:56:15 IST" name="testCompleteE2EFlow" finished-at="2026-04-15T00:56:48 IST" duration-ms="32314" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testE2E_Register_Login_AddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:16:42 IST" name="tearDown" finished-at="2026-04-15T00:16:43 IST" duration-ms="657" status="PASS">
+        </test-method> <!-- testCompleteE2EFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@75d4a5c2]" started-at="2026-04-15T00:56:48 IST" name="tearDown" finished-at="2026-04-15T00:56:48 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.EndToEndTest -->
-    </test> <!-- CartTest -->
+    </test> <!-- E2E Tests -->
   </suite> <!-- AutomationSuite -->
 </testng-results>

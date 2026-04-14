@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.*;
 import utils.ConfigReader;
+import utils.ScreenshotUtil;
 
 public class CheckoutPage extends BasePage {
 
@@ -16,14 +17,12 @@ public class CheckoutPage extends BasePage {
 
     private By payBtn = By.id("submit");
 
-    // 🔥 Login redirect check
     private By loginText = By.xpath("//h2[contains(text(),'Login to your account')]");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
 
-    // ✅ MATCHING METHOD NAME
     public void clickProceedToCheckout() {
         waitForElement(proceedCheckout).click();
     }
@@ -40,6 +39,9 @@ public class CheckoutPage extends BasePage {
         waitForElement(expiryMonth).sendKeys(ConfigReader.get("expiryMonth"));
         waitForElement(expiryYear).sendKeys(ConfigReader.get("expiryYear"));
 
+        // TAKE SCREENSHOT HERE (IMPORTANT)
+        ScreenshotUtil.capture(driver, "Payment_Page");
+
         System.out.println("Payment details entered");
     }
 
@@ -48,7 +50,6 @@ public class CheckoutPage extends BasePage {
         System.out.println("Order confirmed");
     }
 
-    // ✅ ADD THIS METHOD
     public boolean isRedirectedToLogin() {
         return waitForElement(loginText).isDisplayed();
     }

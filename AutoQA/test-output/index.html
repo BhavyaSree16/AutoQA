@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-AutomationSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationSuite" title="tests.EndToEndTest" class="method navigator-link" hash-for-method="testE2E_Register_Login_AddToCart">testE2E_Register_Login_AddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.EndToEndTest" class="method navigator-link" hash-for-method="testCompleteE2EFlow">testCompleteE2EFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AutomationSuite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testE2E_Register_Login_AddToCart">
-                  </a> <!-- testE2E_Register_Login_AddToCart -->
-                  <span class="method-name">testE2E_Register_Login_AddToCart</span>
+                  <a name="testCompleteE2EFlow">
+                  </a> <!-- testCompleteE2EFlow -->
+                  <span class="method-name">testCompleteE2EFlow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,11 +143,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;AutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;CartTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;E2E Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.EndToEndTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CartTest --&gt;
+  &lt;/test&gt; &lt;!-- E2E Tests --&gt;
 &lt;/suite&gt; &lt;!-- AutomationSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CartTest (1 class)</span>
+                <span class="test-name">E2E Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testE2E_Register_Login_AddToCart')
+data.setCell(0, 1, 'testCompleteE2EFlow')
 data.setCell(0, 2, 'tests.EndToEndTest')
-data.setCell(0, 3, 22415);
+data.setCell(0, 3, 32314);
 window.suiteTableData['AutomationSuite']= { tableData: data, tableDiv: 'times-div-AutomationSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-AutomationSuite">
               </div> <!-- times-div-AutomationSuite -->
             </div> <!-- times-div -->
@@ -226,12 +226,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testE2E_Register_Login_AddToCart</span>
-                <span class="method-start">5011 ms</span>
+                <span class="method-name">testCompleteE2EFlow</span>
+                <span class="method-start">9308 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27432 ms</span>
+                <span class="method-start">41640 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
