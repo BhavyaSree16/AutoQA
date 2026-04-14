@@ -250,7 +250,7 @@ Captured:
 
 </suite>
 ```
-💡 Best Practices Implemented
+## 💡 Best Practices Implemented
 ```
 Page Object Model (POM)
 Explicit waits (no Thread.sleep)
@@ -261,7 +261,7 @@ Extent Report integration
 Clean layered architecture
 ```
 ```
-🛠 Troubleshooting
+## 🛠 Troubleshooting
 Issue	Solution
 Report not generated	Check extent.flush()
 Screenshots missing	Verify folder path
@@ -269,7 +269,7 @@ Driver issues	Use WebDriverManager
 Element not found	Increase wait
 ```
 ```
-🧰 Technology Stack
+## 🧰 Technology Stack
 Component	Technology
 Language	Java
 Automation	Selenium
@@ -279,14 +279,15 @@ Reporting	ExtentReports
 Browser	Chrome
 ```
 
-📌 Conclusion
-
+## 📌 Conclusion
+```
 This project demonstrates a complete real-world automation framework with:
 Authentication
 Product testing
 Cart operations
 Checkout & payment
 Form validations
+```
 Advanced reporting
 
 Contact & Contribution
