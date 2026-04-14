@@ -30,6 +30,7 @@ Base Layer → BaseTest, BasePage
 Page Layer → SignupPage, LoginPage, ProductsPage, CartPage, CheckoutPage  
 Test Layer → Test classes (E2E, Cart, Products, Validation)  
 Utility Layer → ConfigReader, ScreenshotUtil  
+Config Layer → config.properties    
 Config Layer → config.properties  
 Project Structure
 AutomationExercise/
