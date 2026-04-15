@@ -1,8 +1,8 @@
-# 🚀 Problem Statement 1: AutoQA Pro: End-to-End Test Automation Framework for an E-Commerce Web Application
+#  Problem Statement 1: AutoQA Pro: End-to-End Test Automation Framework for an E-Commerce Web Application
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 AutomationExercise is a comprehensive **end-to-end Selenium automation framework** built using **Selenium WebDriver and TestNG**.  
 This project demonstrates real-world automation scenarios including authentication, product testing, cart operations, checkout flow, and form validations.
